@@ -68,7 +68,7 @@ form_create:
   {"type": "text", "label": "Meds given (name/dose)", "identifier": "meds_given", "placeholder": "e.g. Apoquel 16mg",
    "show_if": {"field": "activities", "op": "contains", "value": "meds_given", "action": "show"}},
   {"type": "textarea", "label": "Notes for owner", "identifier": "notes_for_owner"},
-  {"type": "photo", "label": "Photos", "identifier": "photos", "max_images": 3},
+  {"type": "photo", "label": "Photos", "identifier": "photos", "max_images": 3, "stamp_photos": true},
   {"type": "select", "label": "Any concerns", "identifier": "any_concerns", "required": true, "options": ["None", "Minor", "Call me"]},
   {"type": "textarea", "label": "Describe the concern", "identifier": "concern_detail",
    "show_if": {"field": "any_concerns", "op": "not_equals", "value": "none", "action": "show"}}
